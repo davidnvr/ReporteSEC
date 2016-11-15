@@ -1,0 +1,622 @@
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head
+	content must come *after* these tags -->
+	<title>Reporte SEC</title>
+	<!-- Bootstrap -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="bootstrap/css/sb-admin.css" rel="stylesheet"> -->
+	<link href="bootstrap/css/yeti.bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="bootstrap/css/flaty.bootstrap.min.css" rel="stylesheet"> -->
+	<!-- <link href="bootstrap/css/lumen.bootstrap.min.css" rel="stylesheet"> -->
+	<link href="site/css/style.css" rel="stylesheet">
+	<link href="bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
+		queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file://
+	-->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-white navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="site\img\logo_enap.png" class="logo"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<div class="text-right">
+					<p>
+						<span>Bienvenido: </span><strong>Administrador</strong><span> | </span><a href="#">Cerrar sesion</a>
+					</p>
+				</div>
+				<ul id="nav-scroll" class="nav navbar-nav navbar-right">
+					<li>
+						<a href="carga.html">CARGAR ARCHIVO</a>
+					</li>
+					<li class="active">
+						<a href="#">SOLICITUDES HISTORICAS</a>
+					</li>
+					<li>
+						<a href="#" class="btn-success"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Descargar Manual</a>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="main-container container">
+		<section id="cargaArchivo">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a role="button" data-toggle="collapse" href="#collapse_solicitud" aria-expanded="false" aria-controls="collapse_solicitud">1° Solicitudes historicas de estandarización SEC</a>
+						<a type="button" class="pull-right pop" data-container="body" data-toggle="popover" data-placement="left" title="Paso 1" data-content="<p>En esta sección puede seleccionar una solicitud realizada anteriormente.</p>">
+							<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+						</a>
+					</h3>
+				</div>
+				<div class="panel-body in" id="collapse_solicitud">
+					<table id="grd_solicitudes" class="table table-striped table-bordered">
+						<tbody>
+							<tr>
+								<th scope="col">Seleccionar</th>
+								<th scope="col">Solicitud</th>
+								<th scope="col">Equipo</th>
+								<th scope="col">IP</th>
+								<th scope="col">Cant. Ventas</th>
+								<th scope="col">Cant. Analisis</th>
+								<th scope="col">Tipo Solicitud</th>
+								<th scope="col">Estado</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">Procesar</a>
+								</td>
+								<td>179</td>
+								<td>ENAP-CONTENTQAS</td>
+								<td>10.185.54.59</td>
+								<td>36</td>
+								<td>13</td>
+								<td>Liquidos</td>
+								<td>En Proceso....</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">Procesar</a>
+								</td>
+								<td>178</td>
+								<td>ENAP-CONTENTQAS</td>
+								<td>10.185.54.59</td>
+								<td>36</td>
+								<td>13</td>
+								<td>Liquidos</td>
+								<td>Completado</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">Procesar</a>
+								</td>
+								<td>177</td>
+								<td>DESKTOP-1ALQG44</td>
+								<td>2001:0:9d38:90d7:107</td>
+								<td>12</td>
+								<td>2</td>
+								<td>Liquidos</td>
+								<td>Cancelado</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="text-center">
+						<nav aria-label="Page navigation">
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reporteVentas">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a role="button" data-toggle="collapse" href="#collapse_reporteVentas" aria-expanded="false" aria-controls="collapse_reporteVentas">2° Generación Reporte de Cantidad de Ventas</a>
+						<a type="button" class="pull-right pop" data-container="body" data-toggle="popover" data-placement="left" title="Paso 2" data-content="<p>En esta sección se genera reporte de ventas , siempre y cuando no se detecten  errores o inconsistencias en archivo cargado.</p>">
+							<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+						</a>
+					</h3>
+				</div>
+				<div class="panel-body collapse" id="collapse_reporteVentas">
+					<h5 class="section-heading2"><strong>Detalle de Errores: </strong></h5>
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td>
+									<span>Región de destino no indicada</span>
+									<a type="button" class="pull-right pop pop_error" data-container="body" data-toggle="popover" data-placement="left" title="Región de destino no identificada" data-content="<p>No se identifico la región de destino</p>">
+										<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+									</a>
+								</td>
+								<td>
+									<span id="lb_region_error">0</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>Fecha de despacho</span>
+									<a type="button" class="pull-right pop pop_error" data-container="body" data-toggle="popover" data-placement="left" title="Fecha de despacho" data-content="<p>Fecha de despacho</p>">
+										<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+									</a>
+								</td>
+								<td>
+									<span id="lb_fecha_despacho_error">0</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>Códigos de despacho únicos</span>
+									<a type="button" class="pull-right pop pop_error" data-container="body" data-toggle="popover" data-placement="left" title="Código de despacho único" data-content="<p>Código de despacho único</p>">
+										<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+									</a>
+								</td>
+								<td>
+									<span id="lb_codigo_despacho_error">0</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>Número de registros debe ser idéntico a formato de entrada</span>
+									<a type="button" class="pull-right pop pop_error" data-container="body" data-toggle="popover" data-placement="left" title="Número de registros debe ser idéntico a formato de entrada" data-content="<p>Número de registros debe ser idéntico a formato de entrada</p>">
+										<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+									</a>
+								</td>
+								<td>
+									<span id="lb_formato_fecha_error">0</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="alert alert-dismissable alert-success">
+						<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+						<strong>Felicidades!</strong> No existen inconsistencias en el archivo cargado.
+					</div>
+					<!--<div class="alert alert-danger alert-dismissable">
+						<button contenteditable="false" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+						<strong>Error!</strong> Existen inconsistencias en el archivo cargado.
+					</div>-->
+					<h5 class="section-heading2"><strong>Tabla SEC Ventas: </strong>CANT_PROD_DIST_NAC_CL</h5>
+					<div>Cantidad Registros Ventas:
+						<span id="lb_cant_registro_ventas">36</span>
+					</div>
+					<br>
+					<div style="height:250px; overflow: auto">
+						<table class="table table-bordered table-striped" rules="all" id="GridView1">
+							<tbody>
+								<tr>
+									<th scope="col">ID_EMPRESA</th>
+									<th scope="col">REGION</th>
+									<th scope="col">ID_INSTALACION_DESPACHO</th>
+									<th scope="col">ID_EMPRESA_DESTINO</th>
+									<th scope="col">REGION_DESTINO</th>
+									<th scope="col">MEDIO_TRANSPORTE</th>
+									<th scope="col">ID_TIPO_COMBUSTIBLE</th>
+									<th scope="col">FECHA_DESPACHO</th>
+									<th scope="col">CANTIDAD_PRODUCTO</th>
+									<th scope="col">ID_CERTIFICADO_ANALISIS</th>
+									<th scope="col">CODIGO_DESPACHO</th>
+									<th scope="col">FECHA_PERIODO_INFO</th>
+									<th scope="col">PERIODO_STAR</th>
+								</tr>
+								<tr>
+									<td>106</td>
+									<td>12</td>
+									<td>103</td>
+									<td>176</td>
+									<td>0</td>
+									<td>1</td>
+									<td>A05</td>
+									<td>17-09-2016 0:00:00</td>
+									<td>17.19</td>
+									<td>0875LCN16</td>
+									<td>1198430</td>
+									<td>30-11-2016</td>
+									<td>201611</td>
+								</tr>
+								<tr>
+									<td>106</td>
+									<td>12</td>
+									<td>103</td>
+									<td>176</td>
+									<td>0</td>
+									<td>1</td>
+									<td>A05</td>
+									<td>17-09-2016 0:00:00</td>
+									<td>8.09</td>
+									<td>0875LCN16</td>
+									<td>1198431</td>
+									<td>30-11-2016</td>
+									<td>201611</td>
+								</tr>
+								<tr>
+									<td>106</td>
+									<td>12</td>
+									<td>103</td>
+									<td>136</td>
+									<td>0</td>
+									<td>1</td>
+									<td>A05</td>
+									<td>17-09-2016 0:00:00</td>
+									<td>10.11</td>
+									<td>0875LCN16</td>
+									<td>1198432</td>
+									<td>30-11-2016</td>
+									<td>201611</td>
+								</tr>
+								<tr>
+									<td>106</td>
+									<td>12</td>
+									<td>103</td>
+									<td>136</td>
+									<td>0</td>
+									<td>1</td>
+									<td>A05</td>
+									<td>17-09-2016 0:00:00</td>
+									<td>10.11</td>
+									<td>0875LCN16</td>
+									<td>1198433</td>
+									<td>30-11-2016</td>
+									<td>201611</td>
+								</tr>
+								<tr>
+									<td>106</td>
+									<td>12</td>
+									<td>103</td>
+									<td>176</td>
+									<td>0</td>
+									<td>1</td>
+									<td>A05</td>
+									<td>17-09-2016 0:00:00</td>
+									<td>15.16</td>
+									<td>0875LCN16</td>
+									<td>1198434</td>
+									<td>30-11-2016</td>
+									<td>201611</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p class="text-center">
+						<input name="btn_exporta1" value="Descargar Archivos SEC Tabla Ventas" id="btn_exporta1" class="btn btn-success" type="submit">
+						<!--<input name="btn_exporta1" value="Descargar Archivos SEC Tabla Ventas" id="btn_exporta1" class="btn btn-default disabled" type="submit">-->
+					</p>
+				</div>
+			</div>
+		</section>
+	
+		<section id="detalleLaboratorio">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a role="button" data-toggle="collapse" href="#collapse_detalle" aria-expanded="false" aria-controls="collapse_detalle">3° Generación Reporte de Calidad</a>
+						<a type="button" class="pull-right pop" data-container="body" data-toggle="popover" data-placement="left" title="Paso 3" data-content="<p>En esta sección se procesan los datos de calidad de cada laboratorio. Para generar el Reporte de Ventas se deben procesar todos los análisis de cada uno de los laboratorios.</p>">
+							<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+						</a>
+					</h3>
+				</div>
+				<div class="panel-body collapse" id="collapse_detalle">
+					<div class="alert alert-dismissable alert-warning text-center">
+						<strong>Atención!</strong> Para generar el Reporte de Ventas se deben procesar
+						todos los análisis de cada uno de los laboratorios
+					</div>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h3 class="panel-title">Análisis Biobío</h3>
+								</div>
+								<div class="panel-body">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td>Cantidad de Análisis a Procesar</td>
+												<td>
+													<span id="lb_procesar_rbb">24</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Cantidad de Análisis Pendientes</td>
+												<td>
+													<span id="lb_procesado_rbb">5</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<p class="text-center">
+										<input name="btn_procesar_rbb" value="Procesar Análisis" id="btn_procesar_rbb" class="btn btn-primary btn-xs" type="submit">
+										<input name="btn_rbb_exporta" value="Exportar Análisis Pendiente" id="btn_rbb_exporta" class="btn btn-success btn-xs" type="submit">
+									</p>
+									<table class="table table-bordered table-condensed table-striped">
+										<thead>
+											<tr>
+												<th>Análisis pendiente</th>
+												<th>Fecha análisis</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1225351</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1225429</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1226725</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1225465</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1224687</td>
+												<td>17-09-2016</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<div class="alert alert-danger alert-dismissable">
+										<button contenteditable="false" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<strong>Error!</strong> Existen inconsistencias en algunos datos de análisis. Favor exportar lista de análisis y revisar la información del archivo
+									</div>
+								</div>
+							</div>
+						</div><!--/col-sm-4 --> 
+						<div class="col-sm-4">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h3 class="panel-title">Análisis Concón</h3>
+								</div>
+								<div class="panel-body">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td>Cantidad de Análisis a Procesar</td>
+												<td>
+													<span id="lb_procesar_rbb">48</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Cantidad de Análisis Pendientes</td>
+												<td>
+													<span id="lb_procesado_rbb">5</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<p class="text-center">
+										<input name="btn_procesar_rbb" value="Procesar Análisis" id="btn_procesar_rbb" class="btn btn-primary btn-xs" type="submit">
+										<input name="btn_rbb_exporta" value="Exportar Análisis Pendiente" id="btn_rbb_exporta" class="btn btn-success btn-xs" type="submit">
+									</p>
+									<table class="table table-bordered table-condensed table-striped">
+										<thead>
+											<tr>
+												<th>Análisis pendiente</th>
+												<th>Fecha análisis</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1225351</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1225429</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1226725</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1225465</td>
+												<td>17-09-2016</td>
+											</tr>
+											<tr>
+												<td>1224687</td>
+												<td>17-09-2016</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="alert alert-danger alert-dismissable">
+										<button contenteditable="false" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<strong>Error!</strong> Existen inconsistencias en algunos datos de análisis. Favor exportar lista de análisis y revisar la información del archivo
+									</div>
+								</div>
+							</div>
+						</div><!--/col-sm-4 -->
+						<div class="col-sm-4">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h3 class="panel-title">Análisis Magallanes</h3>
+								</div>
+								<div class="panel-body">
+									<table width="100%">
+										<tbody>
+											<tr>
+												<td>Cantidad de Análisis a Procesar</td>
+												<td>
+													<span id="lb_procesar_rbb">65</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Cantidad de Análisis Pendientes</td>
+												<td>
+													<span id="lb_procesado_rbb">0</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<br>
+									<p class="text-center">
+										<input name="btn_procesar_rbb" value="Procesar Análisis" id="btn_procesar_rbb" class="btn btn-primary btn-xs" type="submit">
+									</p>
+									
+									<div class="alert alert-dismissable alert-success">
+										<button contenteditable="false" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<strong>Felicidades!</strong> No existen inconsistencias en el análisis. Todos fueron procesados correctamente.
+									</div>
+								</div>
+							</div>
+						</div><!--/col-sm-4 -->
+						<div class="col-md-12">
+							<h5 class="section-heading2"><strong>Tabla SEC Calidad: </strong>CERT_CAL_PROD_DIST_NAC_CL</h5>
+							<div style="height:250px; overflow: auto">
+								<table class="table table-bordered table-striped" rules="all" id="GridView1">
+									<tbody>
+										<tr>
+											<th scope="col">ID_EMPRESA</th>
+											<th scope="col">REGION</th>
+											<th scope="col">ID_INSTALACION_DESPACHO</th>
+											<th scope="col">ID_EMPRESA_DESTINO</th>
+											<th scope="col">REGION_DESTINO</th>
+											<th scope="col">MEDIO_TRANSPORTE</th>
+											<th scope="col">ID_TIPO_COMBUSTIBLE</th>
+											<th scope="col">FECHA_DESPACHO</th>
+											<th scope="col">CANTIDAD_PRODUCTO</th>
+											<th scope="col">ID_CERTIFICADO_ANALISIS</th>
+											<th scope="col">CODIGO_DESPACHO</th>
+											<th scope="col">FECHA_PERIODO_INFO</th>
+											<th scope="col">PERIODO_STAR</th>
+										</tr>
+										<tr>
+											<td>106</td>
+											<td>12</td>
+											<td>103</td>
+											<td>176</td>
+											<td>0</td>
+											<td>1</td>
+											<td>A05</td>
+											<td>17-09-2016 0:00:00</td>
+											<td>17.19</td>
+											<td>0875LCN16</td>
+											<td>1198430</td>
+											<td>30-11-2016</td>
+											<td>201611</td>
+										</tr>
+										<tr>
+											<td>106</td>
+											<td>12</td>
+											<td>103</td>
+											<td>176</td>
+											<td>0</td>
+											<td>1</td>
+											<td>A05</td>
+											<td>17-09-2016 0:00:00</td>
+											<td>8.09</td>
+											<td>0875LCN16</td>
+											<td>1198431</td>
+											<td>30-11-2016</td>
+											<td>201611</td>
+										</tr>
+										<tr>
+											<td>106</td>
+											<td>12</td>
+											<td>103</td>
+											<td>136</td>
+											<td>0</td>
+											<td>1</td>
+											<td>A05</td>
+											<td>17-09-2016 0:00:00</td>
+											<td>10.11</td>
+											<td>0875LCN16</td>
+											<td>1198432</td>
+											<td>30-11-2016</td>
+											<td>201611</td>
+										</tr>
+										<tr>
+											<td>106</td>
+											<td>12</td>
+											<td>103</td>
+											<td>136</td>
+											<td>0</td>
+											<td>1</td>
+											<td>A05</td>
+											<td>17-09-2016 0:00:00</td>
+											<td>10.11</td>
+											<td>0875LCN16</td>
+											<td>1198433</td>
+											<td>30-11-2016</td>
+											<td>201611</td>
+										</tr>
+										<tr>
+											<td>106</td>
+											<td>12</td>
+											<td>103</td>
+											<td>176</td>
+											<td>0</td>
+											<td>1</td>
+											<td>A05</td>
+											<td>17-09-2016 0:00:00</td>
+											<td>15.16</td>
+											<td>0875LCN16</td>
+											<td>1198434</td>
+											<td>30-11-2016</td>
+											<td>201611</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<br>
+							<p class="text-center">
+								<!--<input name="btn_exporta_calidad" value="Descargar Archivos SEC Tabla Calidad" id="btn_exporta_calidad" class="btn btn-success" type="submit">-->
+								<input name="btn_exporta_calidad" value="Descargar Archivos SEC Tabla Calidad" id="btn_exporta_calidad" class="btn btn-default disabled" type="submit">
+							</p>
+						</div><!--/col-sm-12 -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- /.container -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual
+	files as needed -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="site/js/scripts.js"></script>
+	<script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="bootstrap-datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+
+
+</body>
+</html>
