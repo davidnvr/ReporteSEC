@@ -1,0 +1,105 @@
+body{
+	background-color: #ecf0f5;
+}
+
+.pop{
+	font-size: 20px;
+    margin-top: -3px;
+}
+.pop_error{
+	font-size: 16px !important;
+    margin-top: 0px !important;
+}
+
+.navbar-white{
+	background-color: #FFF;
+}
+.navbar-nav > .active{
+	border-bottom: 3px solid #3db5d8;
+}
+.navbar-nav > .active > a{
+	color: #030303;
+	font-weight: bold;
+}
+.navbar-nav > li > a{
+	color: #030303;
+}
+
+.navbar-nav > li > a:hover{
+	border-bottom: 3px solid #3db5d8;
+	background-color: transparent;
+}
+
+.navbar-nav > li > .btn-success:hover{
+	border-bottom: 3px solid #3db5d8;
+	background-color: #358753;
+}
+
+.navbar-nav > .active > a:hover{
+	border-bottom: 0px solid #3db5d8;
+}
+
+.navbar-nav > li > .btn-success{
+	color: #FFF;
+}
+
+.logo{
+	height: 50px;
+}
+.main-container{
+	margin-top: 100px;
+}
+
+input[type="file"]{
+	display: inline-block;
+	vertical-align: middle;
+}
+label{
+	font-size: 14px;
+}
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#uploadFile{
+	width: 300px;
+}
+
+/* PANEL */
+.panel{
+	border-radius: 4px;
+}
+.panel-primary {
+	border-color: #f4f4f4;
+}
+.panel-primary>.panel-heading {
+	color: #000;
+	 background-color: #FFF; 
+	border-color: #f4f4f4;
+	border-top: 3px solid #008cba;
+	border-radius: 3px;
+}
+
+.side-nav{
+	top:45px;
+}
+
+#page-wrapper{
+	background-color: transparent !important;
+}
+
+.alert-inline{
+	margin-bottom: 0px;
+}
